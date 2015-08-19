@@ -1,1 +1,21 @@
 This is the new page
+
+
+
+<%= form_for @word do |f| %>
+
+<%= f.label :hanzi, "Hanzi"  %>
+<%= f.text_field :hanzi%>
+<br>
+
+<%= f.label :pinyin, "Pinyin"  %>
+<%= f.text_field :pinyin%>
+<br>
+<%= f.label :english, "Enlgish"  %>
+<%= f.text_field :english%>
+<br>
+<%= f.submit "Submit" %>
+
+
+
+<% end %>
